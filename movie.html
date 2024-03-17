@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+    margin: 0;
+    padding: 0;
+    }
+    .navbar {
+        background-color: rgb(41, 41, 41);
+        text-align: center;
+        flex-direction: row;
+    }
+    .nav-list{
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .nav-list li{
+        padding: 20px;
+    
+    }
+   
+    
+    .nav-list li a:hover{ 
+        color:rgb(41, 41, 41);
+   }
+
+
+
+   .image-container {
+    position: fixed;
+    display: inline-block;
+    overflow: hidden;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.image-container img {
+    transition: transform 0.3s;
+    width: 300px;
+    height: 300px;
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* اندازه بزرگ‌نمایی را می‌توانید تنظیم کنید */
+}
+.image-container {
+    position:relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+}
+
+
+
+
+.Image-container1 {
+    position: fixed;
+    display: inline-block;
+    overflow: hidden;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.Image-container1 img {
+    transition: transform 0.3s;
+    width: 300px;
+    height: 300px;
+}
+
+.Image-container1:hover img {
+    transform: scale(1.1); /* اندازه بزرگ‌نمایی را می‌توانید تنظیم کنید */
+
+}
+.Image-container1 {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.Image-container1:hover .overlay2 {
+    opacity: 1;
+}
+
+.overlay2 img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Image-container2 {
+    position: fixed;
+    display: inline-block;
+    overflow: hidden;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.Image-container2 img {
+    transition: transform 0.3s;
+    width: 300px;
+    height: 300px;
+}
+
+.Image-container2:hover img {
+    transform: scale(1.1); /* اندازه بزرگ‌نمایی را می‌توانید تنظیم کنید */
+
+}
+.Image-container2 {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.Image-container2:hover .overlay3 {
+    opacity: 1;
+}
+
+.overlay3 img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+}
+
+
+
+
+
+
+.sana {
+    position: relative;
+    text-align: center;
+    padding: 20PX;
+}
+    
+
+.image-container{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-color: black;
+}
+
+.image-container img {
+    transition: transform 0.3s;
+    width: 300px;
+    height: 350px;
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* اندازه بزرگ‌نمایی را می‌توانید تنظیم کنید */
+
+}
+.image-container {
+    position:relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+}
+
+
+
+
+.Image-container1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-color: black;
+}
+
+.Image-container2 img {
+    transition: transform 0.3s;
+    width: 300px;
+    height: 350px;
+}
+
+.Image-container1:hover img {
+    transform: scale(1.1); /* اندازه بزرگ‌نمایی را می‌توانید تنظیم کنید */
+
+}
+.Image-container1 {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.Image-container1:hover .overlay2 {
+    opacity: 1;
+}
+
+.overlay2 img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Image-container2 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-color: black;
+}
+
+.Image-container2 img {
+    transition: transform 0.3s;
+    width: 300px;
+    height: 300px;
+}
+
+.Image-container2:hover img {
+    transform: scale(1.1); /* اندازه بزرگ‌نمایی را می‌توانید تنظیم کنید */
+
+}
+.Image-container2 {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.Image-container2:hover .overlay3 {
+    opacity: 1;
+}
+
+.overlay3 img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+}
+
+
+
+
+
+
+.sana {
+    position: relative;
+    text-align: center;
+    padding: 20PX;
+}
+    
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+border: hwb(hue white black);
+border-style: dashed;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: black; /* Change color in hover*/
+}
+
+main {
+    flex: 1;
+   
+}
+ footer {
+    padding: 10px 0;
+    width: 100;
+    position: sticky;    
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 5;
+    background-color: black; 
+    color: white; 
+    text-align: center;
+    
+ }
+
+
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li> <a href="index.html">🏠home</a></li>
+            <li><a href="movie.html">🎞Films</a></li>
+        
+        </ul>
+        </nav>
+                
+        <!-- Your website content goes here -->
+
+
+
+
+<figure class="image-container">
+            <img src="New folder/photo_2024-03-12_09-06-08.jpg" alt="">
+            <figcaption class="sana"><a href="moviedetails.html">title:</a></figcaption>
+            <div class="overlay">
+               <a href="moviedetails.html"> <img src="New folder/play-circle-512.webp" alt="play Icon"></a>
+            </div>
+        </figure>
+<figure class="Image-container1">
+              <a href=""> <img src="New folder/photo_2024-03-12_09-06-45.jpg" alt=""></a>
+            <figcaption class="sana"><a href="moviedetails.html">title:</a></figcaption>
+            <div class="overlay2">
+              <a href="moviedetails2.html"> <img src="New folder/play-circle-512.webp" alt="play Icon"></a> 
+            </div>
+</figure>
+       <figure class="Image-container2">
+       <img src="New folder/photo_2024-03-12_09-06-59.jpg" alt="">
+<figcaption class="sana"><a href="">title:</a></figcaption>
+<div class="overlay3">
+   <a href="moviedetails3.html"> <img src="New folder/play-circle-512.webp" alt="play icon"></a>
+</div>
+       </figure> 
+
+
+
+<div class="center">
+<button class="btn">⋘</button>
+<button class="btn">1</button>
+<button class="btn">2</button>
+<button class="btn">3</button>
+<button class="btn">⋙</button>
+</div>
+
+
+
+
+<main>
+    .
+ </main>
+ <footer>
+     &copy; ©2024گنجینه سینما 
+ </footer> 
+
+</body>
+</html>
